@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+@font-face {
+    font-family:Norse ;
+    src: url('./font/Norse.otf') format('opentype')
+}
+
+@font-face {
+    font-family:NorseBold ;
+    src:url(./font/Norsebold.otf) format('truetype');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+   
+    background-color: blue;
+}
+
+header{
+    font-family: NorseBold ,Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+header h1{
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+}
+
+nav{
+    font-family: Norse ,Arial, Helvetica, sans-serif;
+    background-image: url(./img/fundo\ verde2.jpg);
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(201, 201, 201);
+    align-items: center;
+    justify-content: center;
+    padding-right: 90px;
+
+}
+
+nav img{
+    padding-left:20px ;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 45px;
+    height: 45px;
+}
+
+nav p{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    padding-left:20px ;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 18px;
+}
+
+/*ANIMAÇÂO*/
+.p{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    
+  }
+  
+  .p::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 67%;
+    height: 2px;
+    background-color: #009b00; /* Cor do sublinhado ao passar o mouse */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+  .p:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+/*------------*/
+
+
+section{
+    
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+section .section-texto{
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+section img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 105px;
+    width: 400px;
+    height: 550px;
+}
+
+section h2{
+    font-family: 'Norse' ,Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+section p{
+    font-family: 'Passero One' ,Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+footer{
+    font-family: Norse ,Arial, Helvetica, sans-serif;
+    background-image: url(./img/fundo\ verde2.jpg);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:green ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    cursor: pointer;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.author {
+    font-weight: bold;
+    color:#b0f3b0;
+    text-shadow: 0 0 10px #009b00; 
+  }
+
